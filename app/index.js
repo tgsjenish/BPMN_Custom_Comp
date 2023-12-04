@@ -1,7 +1,6 @@
 import { FormPlayground } from "@bpmn-io/form-js";
 
 import RenderExtension from "./extension/render";
-import GridExtension from "./extension/AGGrid";
 import MTextFieldExtension from "./extension/TextField";
 
 import PropertiesPanelExtension from "./extension/propertiesPanel";
@@ -20,7 +19,7 @@ new FormPlayground({
   data: {},
 
   // load rendering extension
-  additionalModules: [RenderExtension, GridExtension],
+  additionalModules: [RenderExtension, MTextFieldExtension],
 
   // load properties panel extension
   editorAdditionalModules: [PropertiesPanelExtension],
